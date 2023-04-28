@@ -20,10 +20,11 @@ const Header = () => {
                     <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur sunt obcaecati animi assumenda odio debitis delectus nesciunt. Sequi, magnam?</p>
                 </Marquee>
             </div>
-            <Nav variant="tabs" defaultActiveKey="/home" class >Nf
-                <div>
+            
+            <div className='d-flex justify-content-between my-5'>
+                <Nav variant="tabs" defaultActiveKey="/home" >
                     <Nav.Item>
-                        <Nav.Link href="/home">Home</Nav.Link>
+                        <Nav.Link href="#">Home</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="#">About</Nav.Link>
@@ -31,11 +32,9 @@ const Header = () => {
                     <Nav.Item>
                         <Nav.Link href="#">Career</Nav.Link>
                     </Nav.Item>
-                </div>
-                <div>
+                </Nav>
                     <button className='btn btn-primary'>Login</button>
-                </div>
-            </Nav>
+            </div>
 
         </Container >
     );
