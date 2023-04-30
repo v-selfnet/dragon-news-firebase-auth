@@ -3,6 +3,7 @@ import logo from '../../../assets/logo.png'
 import moment from 'moment';
 import { Button, Container, Nav } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -24,13 +25,16 @@ const Header = () => {
             <div className='d-flex justify-content-between my-5'>
                 <Nav variant="tabs" defaultActiveKey="/home" >
                     <Nav.Item>
-                        <Nav.Link href="#">Home</Nav.Link>
+                        {/* <Nav.Link to='/'>Home</Nav.Link> */}
+                        <Link to='/'>Home</Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="#">About</Nav.Link>
+                        {/* <Nav.Link to='/about'>About</Nav.Link> */}
+                        <Link to='/about'>About</Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="#">Career</Nav.Link>
+                        {/* <Nav.Link to='/career'>Career</Nav.Link> */}
+                        <Link to='/career'>Career</Link>
                     </Nav.Item>
                 </Nav>
                     <button className='btn btn-primary'>Login</button>
