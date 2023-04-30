@@ -1,15 +1,14 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Header from '../pages/shared/Header/Header';
-import Footer from '../pages/shared/Footer/Footer';
-import LeftNav from '../pages/shared/LeftNav/LeftNav';
-import RightNav from '../pages/shared/RightNav/RightNav';
 import { Outlet } from 'react-router-dom';
+import Header from '../shared/Header/Header';
+import Footer from '../shared/Footer/Footer';
+import RightNav from '../shared/RightNav/RightNav';
 
 const NewsLayout = () => {
     return (
         <div>
-        <Header></Header>
+            <Header></Header>
        
        <Container>
             <Row>
@@ -23,8 +22,8 @@ const NewsLayout = () => {
             </Row>
         </Container>
         
-        
         <Footer></Footer>
+        
     </div>
     );
 };
