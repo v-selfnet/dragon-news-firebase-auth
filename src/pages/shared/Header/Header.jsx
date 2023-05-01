@@ -37,7 +37,9 @@ const Header = () => {
                         <Link to='/career'>Career</Link>
                     </Nav.Item>
                 </Nav>
-                    <button className='btn btn-primary'>Login</button>
+                    
+                        <Link to='/login'><button className='btn btn-primary'>Login</button></Link>
+                    
             </div>
 
         </Container >

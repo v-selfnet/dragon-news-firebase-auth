@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
 import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import QZone from '../QZone/QZone';
+import { AuthContext } from '../../../AuthProvider/AuthProvider';
 
 const RightNav = () => {
+    const {user} = useContext(AuthContext);
+    
     return (
         <>
             <h3>Login with</h3>
